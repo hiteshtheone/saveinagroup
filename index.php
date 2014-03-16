@@ -22,11 +22,10 @@ function myOffers()
 }
 function changeOption()
 {
-	alert("hitesh");
 	var selectBox = document.getElementById("myOption");
 	var selectedValue = selectBox.options[selectBox.selectedIndex].value;
 	alert(selectedValue);
-	switch(selectedValue)
+	switch(Number(selectedValue))
 	{
 		case 1:
 			myTravel();
