@@ -4,6 +4,14 @@
 <title>groupdeal.com</title>
 <link rel="stylesheet" type="text/css" href="mainpage.css"> 
 <script>
+document.addEventListener('DOMContentLoaded', function() {
+    var link = document.getElementById('dropTravel');
+    // onClick's logic below:
+    link.addEventListener('click', function() {
+        hellYeah('xxx');
+    });
+});
+
 function myTravel()
 {
 document.getElementById("results").innerHTML="Travel data streamed here!!!";
@@ -46,10 +54,10 @@ document.getElementById("results").innerHTML="Offers data streamed here!!!";
           		<p class="all-search-label">
              	 <label> search in </label>
              	  <select id = "myList">
-               	    <option value = "1" onclick="myTravel()">travel</option>
-               	    <option value = "2" onclick="myServices()">services</option>
-                    <option value = "3" onclick="myProducts()">products</option>
-                    <option value = "4" onclick="myOffers()">offers</option>
+               	    <option value = "1" onclick="myTravel()" id = "dropTravel">travel</option>
+               	    <option value = "2" onclick="myServices()" id = "dropServices">services</option>
+                    <option value = "3" onclick="myProducts()" id = "dropProducts">products</option>
+                    <option value = "4" onclick="myOffers()" id = "dropOffers">offers</option>
                   </select>
                 </p>
        	     </fieldset>
