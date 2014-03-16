@@ -35,9 +35,12 @@ function changeOption()
 			break;
 		case 3:
 			myProducts();
+			break;
 		case 4:
 			myOffers()
 				break;
+		default:
+			document.getElementById("results").innerHTML="Expecting some data to be streamed here!!!";
 	}
 }
 </script>
