@@ -11,18 +11,18 @@ document.getElementById("results").innerHTML="Travel data streamed here!!!";
 }
 function myProducts()
 {
-alert("fetch Travel data");
-document.getElementById("results").innerHTML="Travel data streamed here!!!";
+alert("fetch Products data");
+document.getElementById("results").innerHTML="Products data streamed here!!!";
 }
 function myServices()
 {
-alert("fetch Travel data");
-document.getElementById("results").innerHTML="Travel data streamed here!!!";
+alert("fetch Services data");
+document.getElementById("results").innerHTML="Services data streamed here!!!";
 }
 function myOffers()
 {
-alert("fetch Travel data");
-document.getElementById("results").innerHTML="Travel data streamed here!!!";
+alert("fetch Offer  data");
+document.getElementById("results").innerHTML="Offers data streamed here!!!";
 }
 </script>
 </head> 
