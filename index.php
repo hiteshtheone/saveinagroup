@@ -9,6 +9,21 @@ function myTravel()
 alert("fetch Travel data");
 document.getElementById("results").innerHTML="Travel data streamed here!!!";
 }
+function myProducts()
+{
+alert("fetch Travel data");
+document.getElementById("results").innerHTML="Travel data streamed here!!!";
+}
+function myServices()
+{
+alert("fetch Travel data");
+document.getElementById("results").innerHTML="Travel data streamed here!!!";
+}
+function myOffers()
+{
+alert("fetch Travel data");
+document.getElementById("results").innerHTML="Travel data streamed here!!!";
+}
 </script>
 </head> 
 <body>
@@ -22,9 +37,9 @@ document.getElementById("results").innerHTML="Travel data streamed here!!!";
 	<div id="home-right-top">
 		<table>
 		<tr>
-		<td> <a href="http://www.w3schools.com">Contact Us  </a> |</td>
-		<td><a href="http://www.w3schools.com">Login </a>|</td>
-		<td><a href="http://www.w3schools.com">Register</a></td>
+		<td> <a href="http://www.google.com">Contact Us  </a> |</td>
+		<td><a href="http://www.google.com">Login </a>|</td>
+		<td><a href="http://www.google.com">Register</a></td>
 		</tr>
 		</table> 
 	</div>
@@ -35,10 +50,10 @@ document.getElementById("results").innerHTML="Travel data streamed here!!!";
           		<p class="all-search-label">
              	 <label> search in </label>
              	  <select id = "myList">
-               	    <option value = "1"  onclick="myTravel()">travel</option>
-               	    <option value = "2">services</option>
-                    <option value = "3">products</option>
-                    <option value = "4">offers</option>
+               	    <option value = "1" onclick="myTravel()">travel</option>
+               	    <option value = "2" onclick="myServices()">services</option>
+                    <option value = "3" onclick="myProducts()">products</option>
+                    <option value = "4" onclick="myOffers()">offers</option>
                   </select>
                 </p>
        	     </fieldset>
