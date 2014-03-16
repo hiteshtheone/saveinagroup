@@ -4,14 +4,27 @@
 <title>groupdeal.com</title>
 <link rel="stylesheet" type="text/css" href="mainpage.css"> 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var link = document.getElementById('dropTravel');
-    // onClick's logic below:
-    link.addEventListener('click', function() {
-        hellYeah('xxx');
-    });
-});
-
+function changeOption()
+{
+alert("hitesh");
+    var selectBox = document.getElementById("myOption");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+    alert(selectedValue);
+    switch(selectedValue)
+{
+case 1:
+myTravel();
+break;
+case 2:
+myServices();
+break;
+case 3:
+myProducts();
+case 4:
+myOffers()
+break;
+}
+}
 function myTravel()
 {
 document.getElementById("results").innerHTML="Travel data streamed here!!!";
@@ -53,11 +66,11 @@ document.getElementById("results").innerHTML="Offers data streamed here!!!";
           		<legend class="all-search-legend">Look for people</legend>
           		<p class="all-search-label">
              	 <label> search in </label>
-             	  <select id = "myList">
-               	    <option value = "1" onclick="myTravel()" id = "dropTravel">travel</option>
-               	    <option value = "2" onclick="myServices()" id = "dropServices">services</option>
-                    <option value = "3" onclick="myProducts()" id = "dropProducts">products</option>
-                    <option value = "4" onclick="myOffers()" id = "dropOffers">offers</option>
+             	  <select id = "myOption" onchange="changeFunc();">
+               	    <option value = "1" >travel</option>
+               	    <option value = "2" >services</option>
+                    <option value = "3" >products</option>
+                    <option value = "4" >offers</option>
                   </select>
                 </p>
        	     </fieldset>
