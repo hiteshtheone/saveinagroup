@@ -66,7 +66,7 @@ document.getElementById("results").innerHTML="Offers data streamed here!!!";
           		<legend class="all-search-legend">Look for people</legend>
           		<p class="all-search-label">
              	 <label> search in </label>
-             	  <select id = "myOption" onchange="changeFunc();">
+             	  <select id = "myOption" onchange="changeOption();">
                	    <option value = "1" >travel</option>
                	    <option value = "2" >services</option>
                     <option value = "3" >products</option>
